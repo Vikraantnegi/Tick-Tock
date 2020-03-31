@@ -13,17 +13,16 @@
             <div class="input1">
                 <label for="minutes-input">Minutes</label>
                 <input type="number" placeholder="0" id="minutes-input" max="300" min="0">
-            </div>
-            
-            <div class="input1">
                 <label for="seconds-input">Seconds</label>
                 <input type="number" placeholder="0" id="seconds-input" step="5" max="59" min="0">
             </div>
             
+            <div class="button">
             <button type="button" onclick="Start();" id="start-button">Start</button>
             <button type="button" onclick="Stop();" id="stop-button" disabled>Stop</button>
             <button type="button" onclick="Pause();" id="pause-button" disabled>Pause</button>
-            
+        </div>
+
         </section>
 
         <h2><span id="minutes">00</span>: <span id="seconds">00</span></h2>
