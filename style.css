@@ -2,52 +2,45 @@ body, button, input{
     font-family: 'Sen', sans-serif;
 }
 
-@media only screen and (max-width: 600px){
-    body{
-        font-size: 0.4em;
-        padding:0;
-
-    }
-}
-
 body{
-    height: 100vh;
-    margin: 75px 75px 0;
-
+    width: 100%;
+    margin: 75px 75px;
 }
 
 h1{
+    margin-bottom: 25px;
     font-weight:700;
-    font-size: 72px;
+    font-size: 80px;
 }
 
 #control{
     display: inline-block;
     width: 40%;
     border-right: 1px solid rgba(0,0,0,0.3);
-    padding-bottom: 50px;
-    padding-right: 50px;
+    padding-bottom: 20px;
+    padding-right: 40px;
 }
 
-#input1{
-    margin: 10px 0;
+.input1{
+    padding-bottom: 20px;
 }
 
 label{
     display: inline-block;
-    width: 30%;
-    font-weight: 200;
-    font-size: 35px;
-    padding: 15px;
+    width: 35%;
+    font-weight: 400;
+    font-size: 40px;
+    padding: 10px;
+    padding-right: 25px;
 } 
 
 input{
-    width: 55%;
-    font-size: 25px;
+    width: 40%;
+    font-size: 35px;
     border:none;
     border-bottom: 1px solid rgba(0,0,0,0.4);
     padding-left: 5px;
-    font-weight: 200;
+    font-weight: 0;
     outline: none;
 }
 
@@ -56,8 +49,13 @@ input:disabled{
     opacity: 0.6; 
 }
 
+.button{
+    width: 100%
+}
+
 button{
-    padding: 12px 55px;
+    margin-left: 10px;
+    padding: 10px 40px;
     background-color: #222;
     color: white;
     border:none;
@@ -78,11 +76,184 @@ h2{
     font-weight: 10;
     font-size: 130px;
     margin: 10px 0;
-    padding-left: 80px; 
+    padding-left: 50px; 
 }
 
+@media(max-width: 1000px){
+    h2{
+        display: inline-block;
+        vertical-align: top;
+        font-size: 110px;
+        padding-left: 30px;
+        text-align: center;
+    }
+    body{
+        height: 100%;
+        width: 100%;
+        margin:40px;
+    }
+    h1{
+        margin: 10px;
+        padding:10px;        
+        font-size: 65px;
+    }
+    #control{
+        padding-bottom: 25px;
+        padding-right: 25px;
+        padding-left: 25px;
+        display:inline-block;
+        width: 40%;
+    }
+    .input1{
+        padding-bottom: 10px;
+    }
+    label{
+        display: inline-block;
+        font-size:30px;
+        padding: 10px;
+        padding-right: 40px;
+        width:25%;
+    }
+    input{
+        width: 40%;
+        font-size: 20px;
+        padding-left: 5px;
+    }
+    button{
+        margin: 10px 0;
+        padding: 10px 30px;
+    }    
 
+}
 
+@media(max-width: 720px){
+    h2{
+        display: inline-block;
+        vertical-align: top;
+        font-size: 80px;
+        padding-left: 10px;
+        text-align: center;
+    }
+    body{
+        height: 100%;
+        width: 100%;
+        margin:20px;
+    }
+    h1{
+        margin: 10px;
+        padding:10px;        
+        font-size: 45px;
+    }
+    #control{
+        padding: 10px;
+        padding-top: 0px;
+        display:inline-block;
+        width: 40%;
+    }
+    .input1{
+        padding-bottom: 5px;
+    }
+    label{
+        display: inline-block;
+        font-size:20px;
+        padding: 10px;
+        padding-right: 30px;
+        width:25%;
+    }
+    input{
+        width: 40%;
+        font-size: 15px;
+        padding-left: 5px;
+    }
+    button{
+        margin: 5px 0;
+        padding: 5px 20px;
+    }    
+}
 
+@media(max-width: 565px){
+    h2{
+        display: inline-block;
+        vertical-align: top;
+        font-size: 60px;
+        padding-left: 10px;
+        text-align: center;
+    }
+    body{
+        height: 100%;
+        width: 100%;
+        margin:20px;
+    }
+    h1{        
+        font-size: 45px;
+    }
+    #control{
+        padding: 10px;
+        padding-top: 0px;
+        display:inline-block;
+        width: 40%;
+    }
+    .input1{
+        padding-bottom: 5px;
+    }
+    label{
+        display: inline-block;
+        font-size:15px;
+        padding: 10px;
+        padding-right: 25px;
+        width:25%;
+    }
+    input{
+        width: 40%;
+        font-size: 15px;
+        padding-left: 5px;
+    }
+    button{
+        margin: 5px 0;
+        padding: 5px 10px;
+    }    
+}
 
+@media(max-width: 450px){
+    h2{
+        display: inline-block;
+        vertical-align: top;
+        font-size: 45px;
+        padding-left: 10px;
+        text-align: center;
+    }
+    body{
+        height: 100%;
+        width: 100%;
+        margin:20px;
+    }
+    h1{        
+        font-size: 45px;
+    }
+    #control{
+        padding: 10px;
+        padding-top: 0px;
+        display:inline-block;
+        width: 40%;
+    }
+    .input1{
+        padding-bottom: 5px;
+    }
+    label{
+        display: inline-block;
+        font-size:15px;
+        padding: 10px;
+        padding-right: 25px;
+        width:25%;
+    }
+    input{
+        width: 40%;
+        font-size: 15px;
+        padding-left: 5px;
+    }
+    button{
+        margin: 5px 0;
+        padding: 5px 5px;
+    }    
+}
 
